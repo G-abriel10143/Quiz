@@ -2,15 +2,20 @@ function respostaCerta() {
     var dino = document.querySelectorAll("input");
 
     for (var i = 0; i < dino.length; i++) {
+        dino[i].setAttribute("disabled", "true");
+
         if (dino[i].checked){
-            var text = dino[i].getAttribute("correct");
-            
+            var idInputSelecionado = dino[i].id;
+            var inputSelecionado = dino[i].getAttribute("correct");
+        }
+        if (dino[i].getAttribute("correct") == 1){
+            var idInputCorreto = dino[i].id;
+            document.getElementById(idInputCorreto).parentElement.style.backgroundColor = "green";
         }
     }
 
-    if (text == "1") {
-        alert("Certa");
-    } else {
-        alert("errada");
+     if (inputSelecionado == 0) {
+        document.getElementById(idInputSelecionado).parentElement.style.backgroundColor = "red";
     }
+
 }
