@@ -1,0 +1,24 @@
+h1{
+    font-size: 50px;
+    font-family: cursive;
+}
+label{
+    font-size: 25px;
+    font-family: cursive;
+    cursor: pointer;
+}
+button{
+    margin-top: 20px;
+    background-color: black;
+    width: 127px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.pergunta {
+    max-width: 50%;
+    margin: 0 auto;
+}
